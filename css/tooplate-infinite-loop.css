@@ -266,104 +266,6 @@ blockquote {
 	padding: 20px 0 30px 0;
 }
 
-/* Testimonials */
-#testimonials {
-  color: white;
-  background-image: url(../img/infinite-loop-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;
-}
-
-@media (max-width: 991px) {
-  #testimonials {
-    background-image: url(../img/infinite-loop-02-mobile.jpg);
-  }
-}
-
-.tm-testimonials-content {
-  position: relative;
-  z-index: 100;
-}
-
-.tm-bg-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 70, 80, 0.2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.tm-testimonials-carousel {
-  max-width: 1050px;
-  margin: 0 auto;
-}
-
-.tm-testimonial-item {
-  max-width: 290px;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.tm-testimonial-item img {
-  border-radius: 50%;
-  margin-bottom: 35px;
-}
-
-.tm-testimonial-item figcaption {
-  text-align: right;
-  font-style: italic;
-  font-size: 1.1rem;
-}
-
-/* Work */
-
-.tm-section-desc {
-  max-width: 650px;
-  width: 100%;
-  font-size: 0.9rem;
-}
-
-.tm-gallery-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
-}
-
-.tm-gallery-item {
-  margin: 0 15px;
-}
-
-.slick-dots {
-  bottom: -65px;
-}
-
-.slick-dots li {
-  margin: 0 13px;
-}
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before,
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #3ba0dd;
-}
-
-.tm-testimonials-carousel .slick-dots li button:before {
-  color: white;
-  opacity: 0.5;
-}
-
-.tm-testimonials-carousel .slick-dots li button:hover:before,
-.tm-testimonials-carousel .slick-dots li button:focus:before,
-.tm-testimonials-carousel .slick-dots li.slick-active button:before {
-  color: white;
-  opacity: 1;
-}
 
 .slick-dots li button:before {
   font-size: 18px;
@@ -515,7 +417,7 @@ figure.effect-honey:hover h2 i {
 #contact {
   color: white;
   background-color: #001828;
-  background-image: url(../img/infinite-loop-03.jpg);
+  background-image: url(../img/infinite-loop-01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 980px;
@@ -708,3 +610,59 @@ p {
 .tm-hero-title {
   padding-top: 100px; /* Povećaj unutrašnji razmak iznad naslova */
 }
+.flag-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* razmak između zastavice i strelice */
+}
+
+.flag-btn .arrow {
+  color: #fff;         /* bijela strelica – prilagodi boji navbar-a */
+  font-size: 7px;
+  transition: transform 0.3s ease;
+}
+
+/* kad je dropdown otvoren, rotiraj strelicu */
+.flag-select.open .arrow {
+  transform: rotate(180deg);
+}
+  .flag-select {
+      position: relative;
+      display: inline-block;
+      margin-left: 12px;
+    }
+    .flag-select button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .flag-select img {
+      width: 22px;
+      height: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .flag-options {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+    .flag-options img {
+      display: block;
+      margin: 2px;
+      width: 25px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .flag-select.open .flag-options {
+      display: block;
+    }
+    

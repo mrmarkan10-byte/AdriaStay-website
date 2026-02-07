@@ -1,367 +1,363 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AdriaStay</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>AdriaStay</title>
+  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
 
 
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#infinite" class="navbar-brand">Adria Stay Agency</a>
-              
-          </div>             
-      
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#infinite">Početna</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">O nama</a>
-              </li>
-             
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Kontakt</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner"><p></p>
-         
-            <h2 class="tm-hero-title">AdriaStay agencija</h2>
-            <p class="tm-hero-subtitle">
-              Gdje elegancija susreće gostoprimstvo.
-        
-   
-              </div>        
-            </p>
-        </div>        
-      </div>
+  
+</head>
 
-     
-    </section>
+<body>
+ 
+  <!-- Hero section -->
+  <section id="infinite" class="text-white tm-font-big tm-parallax">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <div class="container d-flex align-items-center justify-content-between">
 
-    <section id="whatwedo" class="tm-section-pad-top">
-      
-      <div class="container">
+        <!-- Lijevi dio: Brand + Zastavice -->
+        <div class="d-flex align-items-center">
+          <a href="#infinite" class="navbar-brand" id="navBrand">Adria Stay Agency</a>
 
-                       <h2 class="tm-text-primary mb-4 tm-section-title"><b>O nama</b></h2>
-                        <p class="mb-4 tm-intro-text">              
-<b>AdriaStay</b> je agencija specijalizirana za profesionalno vođenje apartmana i luksuznih smještajnih jedinica u <b>Šibeniku i okolici.</b> 
-<p><b>Naša misija je jednostavna</b> – pružiti vrhunsku uslugu vlasnicima nekretnina i besprijekorno iskustvo svakom gostu.</p>
-<p>S više od <b>10 godina iskustva u turizmu i upravljanju smještajem</b>, znamo što znači povjerenje. </p>
-<p>Brinemo se za sve – <b>od komunikacije s gostima, check-ina, check-outa i čišćenja, do oglašavanja i optimizacije cijena.</b></p> <p>Vi uživate u prihodima,
- mi se brinemo za ostalo.</p>
-</a></p>
-            <br>
-            <div class="row tm-content-box"><!-- second row -->
-        		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Check-in / Check-out usluga</h2>
-                        <p class="mb-4 tm-intro-text">
-                         Osobni pristup i toplina prilikom dočeka gostiju.
-                         </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Oglašavanje i optimizacija</h2>
-                        <p class="mb-4 tm-intro-text">
-                           Postavljanje i vođenje profila na platformama poput <b>Airbnb-a i Bookinga.</b></p>
-                    </div>
-                </div>
+          <!-- 🔻 Dropdown samo sa zastavicama -->
+          <div class="flag-select" id="flagDropdown">
+            <!-- Trenutno izabrana zastavica -->
+            <button type="button" onclick="toggleFlags()" class="flag-btn">
+  <img id="currentFlag" src="https://flagcdn.com/hr.svg" alt="Current Language">
+  <i class="fas fa-chevron-down arrow"></i>  <!-- 🔻 Dodana Font Awesome strelica -->
+</button>
 
-            </div><!-- second row -->
-            
-            <div class="row tm-content-box"><!-- third row -->
-        		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Profesionalno čišćenje i održavanje</h2>
-                        <p class="mb-4 tm-intro-text">
-                     Uvijek besprijekorno čisto i spremno za nove dolaske.</p>
-                          
-                          
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Komunikacija s gostima</h2>
-                        <p class="mb-4 tm-intro-text">
-                        Brza, ljubazna i višestranična podrška – prije, tijekom i nakon boravka.</p>
-                          
-                         
-                    </div>
-                </div>
-                
-                   <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Fotografiranje i brendiranje smještaja</h2>
-                        <p class="mb-4 tm-intro-text">
-                        Vizualna prezentacija koja prodaje – jer prvi dojam je najvažniji.</p>
-                          
-                         
-                    </div>
-                </div>
-
-            </div><!-- third row -->
-        
-        </div>
-      
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4"><b>Kontakt</b></h2>
-                <p class="mb-5">
-                  Za bilo kakva pitanja kontaktirajte nas putem mobitela, email-a ili nas posjetite na lokaciji 
-                </p><br>
+            <!-- Padajući izbornik -->
+            <div class="flag-options">
+              <img src="https://flagcdn.com/hr.svg" alt="Hrvatski" onclick="selectFlag('hr', this.src)">
+              <img src="https://flagcdn.com/gb.svg" alt="English"  onclick="selectFlag('en', this.src)">
+              <img src="https://flagcdn.com/de.svg" alt="Deutsch"  onclick="selectFlag('de', this.src)">
             </div>
-            
-           
-            <div class="col-sm-12 col-md-6">
+          </div>
+          <!-- 🔺 Kraj dropdowna -->
+        </div>
 
-            <div class="contact-item">
-                  <a rel="nofollow" href="tel:+385955754751" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0"><b>Mobitel: </b>0955754751</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="marko.maras710@gmail.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0"><b>Email:</b> marko.maras710@gmail.com</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.google.com/maps?q=Ul. kralja Tomislava 8, 22000, Šibenik" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                      <span class="mb-0"><b> Lokacija:</b>
-                      Ulica Kralja Tomislava 8 Šibenik
-                      </span>
-                  </a>              
-                </div>
-                
-                
-      
-            
-            
-        </div><!-- row ending -->
-        
+        <!-- Desni dio: Collapse meni -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+
+
+
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" id="navHome" href="#infinite">Početna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" id="navAbout" href="#whatwedo">O nama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" id="navContact" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+        <h2 class="tm-hero-title" id="heroTitle">AdriaStay agencija</h2>
+        <p class="tm-hero-subtitle" id="heroSubtitle">Gdje elegancija susreće gostoprimstvo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="whatwedo" class="tm-section-pad-top">
+    <div class="container">
+      <h2 class="tm-text-primary mb-4 tm-section-title" id="aboutTitle"><b>O nama</b></h2>
+      <p class="mb-4 tm-intro-text" id="aboutText1">
+        <b>AdriaStay</b> je agencija specijalizirana za profesionalno vođenje apartmana i luksuznih smještajnih jedinica
+        u <b>Šibeniku i okolici.</b>
+      </p>
+      <p id="aboutText2"><b>Naša misija je jednostavna</b> – pružiti vrhunsku uslugu vlasnicima nekretnina i
+        besprijekorno iskustvo svakom gostu.</p>
+      <p id="aboutText3">S više od <b>10 godina iskustva u turizmu i upravljanju smještajem</b>, znamo što znači
+        povjerenje.</p>
+      <p id="aboutText4">Brinemo se za sve – <b>od komunikacije s gostima, check-ina, check-outa i čišćenja, do
+          oglašavanja i optimizacije cijena.</b></p>
+      <p id="aboutText5">Vi uživate u prihodima, mi se brinemo za ostalo.</p>
+
+      <div class="row tm-content-box">
+        <div class="col-lg-1">
+          <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="tm-text-primary mb-4" id="service1Title">Check-in / Check-out usluga</h2>
+          <p class="mb-4 tm-intro-text" id="service1Text">Osobni pristup i toplina prilikom dočeka gostiju.</p>
+        </div>
+        <div class="col-lg-1">
+          <i class="far fa-3x fa-calendar-alt text-center tm-icon"></i>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="tm-text-primary mb-4" id="service2Title">Oglašavanje i optimizacija</h2>
+          <p class="mb-4 tm-intro-text" id="service2Text">Postavljanje i vođenje profila na platformama poput
+            <b>Airbnb-a i Bookinga.</b>
+          </p>
+        </div>
       </div>
 
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          Copyright &copy; 2025 AdriaStay
-          
-          
-        </footer>
+      <div class="row tm-content-box">
+        <div class="col-lg-1">
+          <i class="fas fa-3x fa-broom text-center tm-icon"></i>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="tm-text-primary mb-4" id="service3Title">Profesionalno čišćenje i održavanje</h2>
+          <p class="mb-4 tm-intro-text" id="service3Text">Uvijek besprijekorno čisto i spremno za nove dolaske.</p>
+        </div>
+        <div class="col-lg-1">
+          <i class="fas fa-3x fa-users text-center tm-icon"></i>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="tm-text-primary mb-4" id="service4Title">Komunikacija s gostima</h2>
+          <p class="mb-4 tm-intro-text" id="service4Text">Brza, ljubazna i višestranična podrška – prije, tijekom i
+            nakon boravka.</p>
+        </div>
+      </div>
 
-    </section>
-    
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
+      <div class="row tm-content-box">
+        <div class="col-lg-1">
+          <i class="fas fa-3x fa-camera-retro text-center tm-icon"></i>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="tm-text-primary mb-4" id="service5Title">Fotografiranje i brendiranje smještaja</h2>
+          <p class="mb-4 tm-intro-text" id="service5Text">Vizualna prezentacija koja prodaje – jer prvi dojam je
+            najvažniji.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+  <!-- Contact -->
+  <section id="contact" class="tm-section-pad-top tm-parallax-2">
+    <div class="container tm-container-contact">
+      <div class="text-center col-12">
+        <h2 class="tm-section-title mb-4" id="contactTitle"><b>Kontakt</b></h2>
+        <p class="mb-5" id="contactText">Za bilo kakva pitanja kontaktirajte nas putem mobitela, email-a ili nas
+          posjetite na lokaciji.</p>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="contact-item">
+          <a rel="nofollow" href="tel:+385955754751" class="item-link">
+            <i class="fas fa-2x fa-phone-square mr-4"></i>
+            <span class="mb-0" id="contactPhone"><b>Mobitel:</b> 0955754751</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a rel="nofollow" href="mailto:marko.maras710@gmail.com" class="item-link">
+            <i class="far fa-2x fa-envelope mr-4"></i>
+            <span class="mb-0" id="contactEmail"><b>Email:</b> adriastay@gmail.com</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a rel="nofollow" href="https://www.google.com/maps?q=Ul. kralja Zvonimira 18, 22000, Šibenik"
+            class="item-link">
+            <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+            <span class="mb-0" id="contactLocation"><b>Lokacija:</b> Ulica Kralja Zvonimira 18, Šibenik</span>
+          </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.775168787329!2d15.889619076016528!3d43.73599727109827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13352f58c3338767%3A0x196dc1cce35af732!2sUl.%20Kralja%20Zvonimira%2018%2C%2022000%2C%20%C5%A0ibenik!5e0!3m2!1shr!2shr!4v1770452186318!5m2!1shr!2shr" width="400" height="250"
+            style="border: 3px solid black; border-radius: 10px; margin-left: 5mm; margin-top: 5mm;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
+        </div>
+      </div>
+    </div>
+    <footer class="text-center small tm-footer">
+      <p class="mb-0" id="footerText">Copyright &copy; 2025 AdriaStay</p>
+    </footer>
+  </section>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+function toggleFlags() {
+      document.getElementById('flagDropdown').classList.toggle('open');
+    }
 
-        return _offset;
+    function selectFlag(lang, src) {
+      document.getElementById('currentFlag').src = src;
+      document.getElementById('flagDropdown').classList.remove('open');
+      setLanguage(lang); // 🔹 koristi tvoju funkciju za promjenu jezika
+    }
+
+    // Zatvori dropdown kad klikneš izvan njega
+    document.addEventListener('click', function(e) {
+      const dd = document.getElementById('flagDropdown');
+      if (!dd.contains(e.target)) dd.classList.remove('open');
+    });
+    function getOffSet() {
+      var _offset = 450;
+      var windowHeight = window.innerHeight;
+
+      if (windowHeight > 500) {
+        _offset = 400;
+      }
+      if (windowHeight > 680) {
+        _offset = 300
+      }
+      if (windowHeight > 830) {
+        _offset = 210;
       }
 
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
+      return _offset;
+    }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
+    function setParallaxPosition($doc, multiplier, $object) {
+      var offset = getOffSet();
+      var from_top = $doc.scrollTop(),
+        bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+      $object.css({ "background-position": bg_css });
+    }
 
-        if(forceSet) {
+    // Parallax function
+    // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+    var background_image_parallax = function ($object, multiplier, forceSet) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      // $object.css({"background-attatchment" : "fixed"});
+
+      if (forceSet) {
+        setParallaxPosition($doc, multiplier, $object);
+      } else {
+        $(window).scroll(function () {
           setParallaxPosition($doc, multiplier, $object);
+        });
+      }
+    };
+
+    var background_image_parallax_2 = function ($object, multiplier) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      $object.css({ "background-attachment": "fixed" });
+
+      $(window).scroll(function () {
+        if ($(window).width() > 768) {
+          var firstTop = $object.offset().top,
+            pos = $(window).scrollTop(),
+            yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({ "background-position": bg_css });
         } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
+          $object.css({ "background-position": "center" });
         }
-      };
+      });
+    };
 
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+    $(function () {
+      // Hero Section - Background Parallax
+      background_image_parallax($(".tm-parallax"), 0.30, false);
+      background_image_parallax_2($("#contact"), 0.80);
+      background_image_parallax_2($("#testimonials"), 0.80);
 
-            var bg_css = 'center ' + yPos + 'px';
+      // Handle window resize
+      window.addEventListener('resize', function () {
+        background_image_parallax($(".tm-parallax"), 0.30, true);
+      }, true);
 
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
+      // Detect window scroll and update navbar
+      $(window).scroll(function (e) {
+        if ($(document).scrollTop() > 120) {
+          $('.tm-navbar').addClass("scroll");
+        } else {
+          $('.tm-navbar').removeClass("scroll");
+        }
+      });
 
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
+      // Close mobile menu after click 
+      $('#tmNav a').on('click', function () {
+        $('.navbar-collapse').removeClass('show');
+      })
 
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+      // Scroll to corresponding section with animation
+      $('#tmNav').singlePageNav({
+        'easing': 'easeInOutExpo',
+        'speed': 600
+      });
 
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+      // Add smooth scrolling to all links
+      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
 
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, 'easeInOutExpo', function () {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
 
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
+      // Pop up
+      $('.tm-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: { enabled: true }
+      });
+
+      $('.tm-testimonials-carousel').slick({
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2
             }
-          ]
-        });
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
 
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
+      // Gallery
+      $('.tm-gallery').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        responsive: [
           {
             breakpoint: 1199,
             settings: {
@@ -391,8 +387,119 @@
             }
           }
         ]
-        });
       });
-    </script>
-  </body>
+    });
+  </script>
+
+  <!-- Translations -->
+  <script>
+    const translations = {
+      hr: {
+        navBrand: "Adria Stay Agency",
+        navHome: "Početna",
+        navAbout: "O nama",
+        navContact: "Kontakt",
+        heroTitle: "AdriaStay agencija",
+        heroSubtitle: "Gdje elegancija susreće gostoprimstvo.",
+        aboutTitle: "O nama",
+        aboutText1: "<b>AdriaStay</b> je agencija specijalizirana za profesionalno vođenje apartmana i luksuznih smještajnih jedinica u <b>Šibeniku i okolici.</b>",
+        aboutText2: "<b>Naša misija je jednostavna</b> – pružiti vrhunsku uslugu vlasnicima nekretnina i besprijekorno iskustvo svakom gostu.",
+        aboutText3: "S više od <b>10 godina iskustva u turizmu i upravljanju smještajem</b>, znamo što znači povjerenje.",
+        aboutText4: "Brinemo se za sve – <b>od komunikacije s gostima, check-ina, check-outa i čišćenja, do oglašavanja i optimizacije cijena.</b>",
+        aboutText5: "Vi uživate u prihodima, mi se brinemo za ostalo.",
+        service1Title: "Check-in / Check-out usluga",
+        service1Text: "Osobni pristup i toplina prilikom dočeka gostiju.",
+        service2Title: "Oglašavanje i optimizacija",
+        service2Text: "Postavljanje i vođenje profila na platformama poput <b>Airbnb-a i Bookinga.</b>",
+        service3Title: "Profesionalno čišćenje i održavanje",
+        service3Text: "Uvijek besprijekorno čisto i spremno za nove dolaske.",
+        service4Title: "Komunikacija s gostima",
+        service4Text: "Brza, ljubazna i višestranična podrška – prije, tijekom i nakon boravka.",
+        service5Title: "Fotografiranje i brendiranje smještaja",
+        service5Text: "Vizualna prezentacija koja prodaje – jer prvi dojam je najvažniji.",
+        contactTitle: "<b>Kontakt</b>",
+        contactText: "Za bilo kakva pitanja kontaktirajte nas putem mobitela, email-a ili nas posjetite na lokaciji.",
+        contactPhone: "<b>Mobitel:</b> 0955754751",
+        contactEmail: "<b>Email:</b> adriastay@gmail.com",
+        contactLocation: "<b>Lokacija:</b> Ulica Kralja Zvonimira 18, Šibenik",
+        footerText: "Copyright © 2026 AdriaStay"
+      },
+      en: {
+        navBrand: "Adria Stay Agency",
+        navHome: "Home",
+        navAbout: "About us",
+        navContact: "Contact",
+        heroTitle: "AdriaStay Agency",
+        heroSubtitle: "Where elegance meets hospitality.",
+        aboutTitle: "About us",
+        aboutText1: "<b>AdriaStay</b> is an agency specialized in professional management of apartments and luxury accommodations in <b>Šibenik and the surrounding area.</b>",
+        aboutText2: "<b>Our mission is simple </b>– to provide top-quality service to property owners and a flawless experience for every guest.",
+        aboutText3: "With over <b>10 years of experience in tourism and property management</b>, we know what trust means.",
+        aboutText4: "We take care of everything – <b>from guest communication, check-in, check-out, and cleaning, to advertising and price optimization.</b>",
+        aboutText5: "You enjoy the income, we take care of the rest.",
+        service1Title: "Check-in / Check-out service",
+        service1Text: "Personal approach and warmth when welcoming guests.",
+        service2Title: "Advertising and optimization",
+        service2Text: "Creating and managing profiles on platforms like Airbnb and Booking.",
+        service3Title: "Professional cleaning and maintenance",
+        service3Text: "Always spotless and ready for new arrivals.",
+        service4Title: "Guest communication",
+        service4Text: "Fast, friendly, and multi-channel support – before, during, and after the stay.",
+        service5Title: "Photography and branding",
+        service5Text: "Visual presentation that sells – because first impressions matter.",
+        contactTitle: "<b>Contact</b",
+        contactText: "For any inquiries, contact us via phone, email, or visit our location.",
+        contactPhone: "<b>Phone:</b> +385 95 575 4751",
+        contactEmail: "<b>Email:</b> adriastay@gmail.com",
+        contactLocation: "<b>Location:</b> Ulica Kralja Zvonimira 18, Šibenik",
+        footerText: "Copyright © 2026 AdriaStay"
+      },
+      de: {
+        navBrand: "Adria Stay Agentur",
+        navHome: "Startseite",
+        navAbout: "Über uns",
+        navContact: "Kontakt",
+        heroTitle: "AdriaStay Agentur",
+        heroSubtitle: "Wo Eleganz auf Gastfreundschaft trifft.",
+        aboutTitle: "Über uns",
+        aboutText1: "<b>AdriaStay</b> ist eine Agentur, die sich auf das professionelle Management von Apartments und Luxusunterkünften in <b>Šibenik und Umgebung spezialisiert hat.</b",
+        aboutText2: "<b>Unsere Mission ist einfach </b>– erstklassigen Service für Immobilieneigentümer und ein makelloses Erlebnis für jeden Gast zu bieten.",
+        aboutText3: "Mit über <b>10 Jahren Erfahrung im Tourismus und in der Unterkunftsverwaltung wissen wir</b>, was Vertrauen bedeutet.",
+        aboutText4: "Wir kümmern uns um alles – <b>von der Gästekommunikation, dem Check-in, Check-out und der Reinigung bis hin zu Werbung und Preisoptimierung.</b>",
+        aboutText5: "Sie genießen die Einnahmen, wir kümmern uns um den Rest.",
+        service1Title: "Check-in / Check-out Service",
+        service1Text: "Persönlicher Ansatz und Herzlichkeit beim Empfang der Gäste.",
+        service2Title: "Werbung und Optimierung",
+        service2Text: "Erstellung und Verwaltung von Profilen auf Plattformen wie Airbnb und Booking.",
+        service3Title: "Professionelle Reinigung und Wartung",
+        service3Text: "Immer makellos sauber und bereit für neue Gäste.",
+        service4Title: "Gästekommunikation",
+        service4Text: "Schneller, freundlicher und mehrkanaliger Support – vor, während und nach dem Aufenthalt.",
+        service5Title: "Fotografie und Branding",
+        service5Text: "Visuelle Präsentation, die verkauft – denn der erste Eindruck zählt.",
+        contactTitle: "<b>Kontakt</b>",
+        contactText: "Für Fragen kontaktieren Sie uns per Telefon, E-Mail oder besuchen Sie uns vor Ort.",
+        contactPhone: "<b>Telefon:</b> +385 95 575 4751",
+        contactEmail: "<b>E-Mail:</b> adriastay@gmail.com",
+        contactLocation: "<b>Standort:</b> Ulica Kralja Zvonimira 8, Šibenik",
+        footerText: "Copyright © 2026 AdriaStay"
+      }
+    };
+
+    function setLanguage(lang) {
+      for (const [key, value] of Object.entries(translations[lang])) {
+        const el = document.getElementById(key);
+        if (el) el.innerHTML = value;
+      }
+      localStorage.setItem("lang", lang);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setLanguage("hr");
+    });
+
+  </script>
+
+</body>
+
 </html>
